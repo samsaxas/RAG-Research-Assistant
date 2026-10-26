@@ -1,0 +1,9 @@
+# Runtime dependencies of the FastAPI service (this is what the Docker image installs)
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+python-multipart>=0.0.9      # required by FastAPI for file uploads
+pypdf>=4.0
+faiss-cpu>=1.8
+numpy>=1.26
+scikit-learn>=1.4            # TF-IDF fallback backend
+google-genai>=1.0            # Gemini (replaces the deprecated google-generativeai package)

@@ -1,0 +1,4 @@
+# Production embeddings (all-MiniLM-L6-v2). Pulls in PyTorch, which is large — kept separate so that
+# CI and the lightweight (TF-IDF) image don't have to install it. The Dockerfile installs CPU-only
+# PyTorch first to keep the image small.
+sentence-transformers>=3.0

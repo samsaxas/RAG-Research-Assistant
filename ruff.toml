@@ -1,0 +1,12 @@
+line-length = 120
+target-version = "py311"
+extend-exclude = ["outputs"]
+
+[lint]
+select = ["E", "F", "W"]
+ignore = [
+    "E402",  # src/ modules add ../src to sys.path before importing — intentional
+]
+
+[lint.per-file-ignores]
+"src/generate.py" = ["E501"]  # the grounding prompt is one long literal — reflowing it would change the prompt

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.env
+data/uploads/
+.DS_Store
+# The real PDF is downloaded with scripts/fetch_real_doc.py (1.8 MB). Delete this line to commit it instead,
+# which also makes the Docker image and Render deploy ship the real document without a download step.
+data/real_docs/*.pdf
+data/real_docs/*.part

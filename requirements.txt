@@ -1,0 +1,5 @@
+# Everything you need to run the whole project locally: API + Streamlit UI + sample-PDF generator + HF embeddings
+-r requirements-api.txt
+-r requirements-hf.txt
+streamlit
+reportlab

@@ -1,0 +1,382 @@
+{
+  "corpus": "sample",
+  "documents": [
+    "company_handbook.pdf",
+    "product_release_notes.pdf",
+    "security_whitepaper.pdf"
+  ],
+  "n_pages": 3,
+  "n_chunks": 6,
+  "chunk_size": 700,
+  "overlap": 100,
+  "backend": "tfidf (local fallback \u2014 NOT the production HuggingFace backend)",
+  "index_build_seconds": 0.67,
+  "retrieval": {
+    "n_questions": 16,
+    "hit_rate_at_1": 1.0,
+    "hit_rate_at_3": 1.0,
+    "hit_rate_at_4": 1.0,
+    "hit_rate_at_5": 1.0,
+    "hit_rate_at_10": 1.0,
+    "mrr_at_10": 1.0,
+    "k": 4,
+    "hit_rate_at_k": 1.0,
+    "retrieval_latency_ms_mean": 0.24,
+    "retrieval_latency_ms_p95": 0.31,
+    "per_question": [
+      {
+        "question": "How many days of paid annual leave do full-time employees get?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "How many days in advance must a leave request be submitted?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "How many days per week can employees work remotely without special approval?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "How often is a fully remote arrangement reviewed?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "What is the dollar threshold below which an expense can be self-approved?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "How long is the new employee probation period?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "What new feature does platform version 3.2 introduce for detecting unusual metrics?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "How many standard deviations from baseline triggers an anomaly alert?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "What is the free-tier API rate limit in v3.2?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "What was the free-tier API rate limit before v3.2?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "What known issue affects PDF export in the current release?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "What encryption standard is used for data at rest?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "How often are encryption keys rotated?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "What compliance certification is currently in progress?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "What is the target detection-to-containment time for critical incidents?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ]
+        ]
+      },
+      {
+        "question": "How long is customer data retained after account closure?",
+        "rank": 1,
+        "top_sources": [
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "security_whitepaper.pdf",
+            1
+          ],
+          [
+            "company_handbook.pdf",
+            1
+          ],
+          [
+            "product_release_notes.pdf",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "generation": null
+}

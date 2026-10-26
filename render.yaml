@@ -1,0 +1,18 @@
+# Render Blueprint — "New +" -> "Blueprint" in the Render dashboard, pick this repo.
+# Free plan = 512 MB RAM, so this uses the light TF-IDF backend (no PyTorch at runtime).
+services:
+  - type: web
+    name: rag-research-analyst
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    region: singapore          # closest Render region to India
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true           # every push to the connected branch redeploys
+    envVars:
+      - key: EMBEDDING_BACKEND
+        value: tfidf
+      - key: GEMINI_API_KEY
+        sync: false            # Render asks for the value when the Blueprint is created; never stored in git
+      - key: API_KEY
+        generateValue: true    # Render generates a random key; copy it from the dashboard's Environment tab
